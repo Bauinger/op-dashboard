@@ -15,12 +15,12 @@ export const routes: Routes = [
       title: 'Dashboard'
   },
   {
-    path: 'address',
+    path: 'operations',
     loadComponent: () =>
-      import('./address-form/address-form.component').then(
-        (c) => c.AddressFormComponent
+      import('./operations/operations.component').then(
+        (c) => c.OperationsComponent
       ),
-      title: 'Address'
+      title: 'Einsätze'
   },
   {
     path: 'incident-log',
